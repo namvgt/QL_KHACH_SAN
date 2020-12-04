@@ -20,9 +20,9 @@ namespace WindowsFormsApp1 {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("QuanLyKhachSan_SQL6DataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class QuanLyKhachSan_SQL6DataSet : global::System.Data.DataSet {
+    public partial class DataSet1 : global::System.Data.DataSet {
         
         private BOPHANDataTable tableBOPHAN;
         
@@ -88,7 +88,7 @@ namespace WindowsFormsApp1 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public QuanLyKhachSan_SQL6DataSet() {
+        public DataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -99,7 +99,7 @@ namespace WindowsFormsApp1 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected QuanLyKhachSan_SQL6DataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -354,7 +354,7 @@ namespace WindowsFormsApp1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            QuanLyKhachSan_SQL6DataSet cln = ((QuanLyKhachSan_SQL6DataSet)(base.Clone()));
+            DataSet1 cln = ((DataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -559,9 +559,9 @@ namespace WindowsFormsApp1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "QuanLyKhachSan_SQL6DataSet";
+            this.DataSetName = "DataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/QuanLyKhachSan_SQL6DataSet.xsd";
+            this.Namespace = "http://tempuri.org/DataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableBOPHAN = new BOPHANDataTable();
@@ -753,7 +753,7 @@ namespace WindowsFormsApp1 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+            DataSet1 ds = new DataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -1083,7 +1083,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1386,7 +1386,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1671,7 +1671,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1992,7 +1992,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2294,7 +2294,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2674,7 +2674,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3055,7 +3055,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3358,7 +3358,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3756,7 +3756,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4079,7 +4079,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4384,7 +4384,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4709,7 +4709,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5087,7 +5087,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5465,7 +5465,7 @@ namespace WindowsFormsApp1 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                QuanLyKhachSan_SQL6DataSet ds = new QuanLyKhachSan_SQL6DataSet();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -8643,7 +8643,7 @@ namespace WindowsFormsApp1 {
         }
     }
 }
-namespace WindowsFormsApp1.QuanLyKhachSan_SQL6DataSetTableAdapters {
+namespace WindowsFormsApp1.DataSet1TableAdapters {
     
     
     /// <summary>
@@ -8832,7 +8832,7 @@ SELECT MABP, TENBP, MA_TRBP, NGAY_NHANCHUC FROM BOPHAN WHERE (MABP = @MABP)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyKhachSan_SQL6DataSet.BOPHANDataTable dataTable) {
+        public virtual int Fill(DataSet1.BOPHANDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -8845,9 +8845,9 @@ SELECT MABP, TENBP, MA_TRBP, NGAY_NHANCHUC FROM BOPHAN WHERE (MABP = @MABP)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyKhachSan_SQL6DataSet.BOPHANDataTable GetData() {
+        public virtual DataSet1.BOPHANDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QuanLyKhachSan_SQL6DataSet.BOPHANDataTable dataTable = new QuanLyKhachSan_SQL6DataSet.BOPHANDataTable();
+            DataSet1.BOPHANDataTable dataTable = new DataSet1.BOPHANDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -8855,14 +8855,14 @@ SELECT MABP, TENBP, MA_TRBP, NGAY_NHANCHUC FROM BOPHAN WHERE (MABP = @MABP)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet.BOPHANDataTable dataTable) {
+        public virtual int Update(DataSet1.BOPHANDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet dataSet) {
+        public virtual int Update(DataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "BOPHAN");
         }
         
@@ -9219,7 +9219,7 @@ SELECT MABP, TENBP, MA_TRBP, NGAY_NHANCHUC FROM BOPHAN WHERE (MABP = @MABP)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyKhachSan_SQL6DataSet.CT_PHIEUDATPHONGDataTable dataTable) {
+        public virtual int Fill(DataSet1.CT_PHIEUDATPHONGDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9232,9 +9232,9 @@ SELECT MABP, TENBP, MA_TRBP, NGAY_NHANCHUC FROM BOPHAN WHERE (MABP = @MABP)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyKhachSan_SQL6DataSet.CT_PHIEUDATPHONGDataTable GetData() {
+        public virtual DataSet1.CT_PHIEUDATPHONGDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QuanLyKhachSan_SQL6DataSet.CT_PHIEUDATPHONGDataTable dataTable = new QuanLyKhachSan_SQL6DataSet.CT_PHIEUDATPHONGDataTable();
+            DataSet1.CT_PHIEUDATPHONGDataTable dataTable = new DataSet1.CT_PHIEUDATPHONGDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9242,14 +9242,14 @@ SELECT MABP, TENBP, MA_TRBP, NGAY_NHANCHUC FROM BOPHAN WHERE (MABP = @MABP)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet.CT_PHIEUDATPHONGDataTable dataTable) {
+        public virtual int Update(DataSet1.CT_PHIEUDATPHONGDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet dataSet) {
+        public virtual int Update(DataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "CT_PHIEUDATPHONG");
         }
         
@@ -9470,7 +9470,7 @@ SELECT MABP, TENBP, MA_TRBP, NGAY_NHANCHUC FROM BOPHAN WHERE (MABP = @MABP)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyKhachSan_SQL6DataSet.CT_PHIEUSUDUNGDICHVUDataTable dataTable) {
+        public virtual int Fill(DataSet1.CT_PHIEUSUDUNGDICHVUDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9483,9 +9483,9 @@ SELECT MABP, TENBP, MA_TRBP, NGAY_NHANCHUC FROM BOPHAN WHERE (MABP = @MABP)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyKhachSan_SQL6DataSet.CT_PHIEUSUDUNGDICHVUDataTable GetData() {
+        public virtual DataSet1.CT_PHIEUSUDUNGDICHVUDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QuanLyKhachSan_SQL6DataSet.CT_PHIEUSUDUNGDICHVUDataTable dataTable = new QuanLyKhachSan_SQL6DataSet.CT_PHIEUSUDUNGDICHVUDataTable();
+            DataSet1.CT_PHIEUSUDUNGDICHVUDataTable dataTable = new DataSet1.CT_PHIEUSUDUNGDICHVUDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9493,14 +9493,14 @@ SELECT MABP, TENBP, MA_TRBP, NGAY_NHANCHUC FROM BOPHAN WHERE (MABP = @MABP)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet.CT_PHIEUSUDUNGDICHVUDataTable dataTable) {
+        public virtual int Update(DataSet1.CT_PHIEUSUDUNGDICHVUDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet dataSet) {
+        public virtual int Update(DataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "CT_PHIEUSUDUNGDICHVU");
         }
         
@@ -9752,7 +9752,7 @@ SELECT MADV, TENDV, TRANGTHAI, DONGIA, MABP FROM DICHVU WHERE (MADV = @MADV)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyKhachSan_SQL6DataSet.DICHVUDataTable dataTable) {
+        public virtual int Fill(DataSet1.DICHVUDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -9765,9 +9765,9 @@ SELECT MADV, TENDV, TRANGTHAI, DONGIA, MABP FROM DICHVU WHERE (MADV = @MADV)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyKhachSan_SQL6DataSet.DICHVUDataTable GetData() {
+        public virtual DataSet1.DICHVUDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QuanLyKhachSan_SQL6DataSet.DICHVUDataTable dataTable = new QuanLyKhachSan_SQL6DataSet.DICHVUDataTable();
+            DataSet1.DICHVUDataTable dataTable = new DataSet1.DICHVUDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -9775,14 +9775,14 @@ SELECT MADV, TENDV, TRANGTHAI, DONGIA, MABP FROM DICHVU WHERE (MADV = @MADV)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet.DICHVUDataTable dataTable) {
+        public virtual int Update(DataSet1.DICHVUDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet dataSet) {
+        public virtual int Update(DataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "DICHVU");
         }
         
@@ -10195,7 +10195,7 @@ SELECT MADOITUONG, LOAIDOITUONG, HESOGIAMGIA, DIEM FROM DOITUONG WHERE (MADOITUO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyKhachSan_SQL6DataSet.DOITUONGDataTable dataTable) {
+        public virtual int Fill(DataSet1.DOITUONGDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -10208,9 +10208,9 @@ SELECT MADOITUONG, LOAIDOITUONG, HESOGIAMGIA, DIEM FROM DOITUONG WHERE (MADOITUO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyKhachSan_SQL6DataSet.DOITUONGDataTable GetData() {
+        public virtual DataSet1.DOITUONGDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QuanLyKhachSan_SQL6DataSet.DOITUONGDataTable dataTable = new QuanLyKhachSan_SQL6DataSet.DOITUONGDataTable();
+            DataSet1.DOITUONGDataTable dataTable = new DataSet1.DOITUONGDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -10218,14 +10218,14 @@ SELECT MADOITUONG, LOAIDOITUONG, HESOGIAMGIA, DIEM FROM DOITUONG WHERE (MADOITUO
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet.DOITUONGDataTable dataTable) {
+        public virtual int Update(DataSet1.DOITUONGDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet dataSet) {
+        public virtual int Update(DataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "DOITUONG");
         }
         
@@ -10645,7 +10645,7 @@ SELECT MAHD, TENHD, NGAYTHANHTOAN, TIENDATTRUOC, TIENGIAMGIA, TIENDICHVU, TONGTI
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyKhachSan_SQL6DataSet.HOADONDataTable dataTable) {
+        public virtual int Fill(DataSet1.HOADONDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -10658,9 +10658,9 @@ SELECT MAHD, TENHD, NGAYTHANHTOAN, TIENDATTRUOC, TIENGIAMGIA, TIENDICHVU, TONGTI
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyKhachSan_SQL6DataSet.HOADONDataTable GetData() {
+        public virtual DataSet1.HOADONDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QuanLyKhachSan_SQL6DataSet.HOADONDataTable dataTable = new QuanLyKhachSan_SQL6DataSet.HOADONDataTable();
+            DataSet1.HOADONDataTable dataTable = new DataSet1.HOADONDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -10668,14 +10668,14 @@ SELECT MAHD, TENHD, NGAYTHANHTOAN, TIENDATTRUOC, TIENGIAMGIA, TIENDICHVU, TONGTI
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet.HOADONDataTable dataTable) {
+        public virtual int Update(DataSet1.HOADONDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet dataSet) {
+        public virtual int Update(DataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "HOADON");
         }
         
@@ -11270,7 +11270,7 @@ SELECT MAKH, TENKH, DIACHI, GIOITINH, SDT, CMND, QUOCTICH, MADOITUONG, DIEMTL FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyKhachSan_SQL6DataSet.KHACHHANGDataTable dataTable) {
+        public virtual int Fill(DataSet1.KHACHHANGDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -11283,9 +11283,9 @@ SELECT MAKH, TENKH, DIACHI, GIOITINH, SDT, CMND, QUOCTICH, MADOITUONG, DIEMTL FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyKhachSan_SQL6DataSet.KHACHHANGDataTable GetData() {
+        public virtual DataSet1.KHACHHANGDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QuanLyKhachSan_SQL6DataSet.KHACHHANGDataTable dataTable = new QuanLyKhachSan_SQL6DataSet.KHACHHANGDataTable();
+            DataSet1.KHACHHANGDataTable dataTable = new DataSet1.KHACHHANGDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -11293,14 +11293,14 @@ SELECT MAKH, TENKH, DIACHI, GIOITINH, SDT, CMND, QUOCTICH, MADOITUONG, DIEMTL FR
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet.KHACHHANGDataTable dataTable) {
+        public virtual int Update(DataSet1.KHACHHANGDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet dataSet) {
+        public virtual int Update(DataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "KHACHHANG");
         }
         
@@ -11860,7 +11860,7 @@ SELECT MALP, TENLP, TRANGBI, DONGIA FROM LOAIPHONG WHERE (MALP = @MALP)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyKhachSan_SQL6DataSet.LOAIPHONGDataTable dataTable) {
+        public virtual int Fill(DataSet1.LOAIPHONGDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -11873,9 +11873,9 @@ SELECT MALP, TENLP, TRANGBI, DONGIA FROM LOAIPHONG WHERE (MALP = @MALP)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyKhachSan_SQL6DataSet.LOAIPHONGDataTable GetData() {
+        public virtual DataSet1.LOAIPHONGDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QuanLyKhachSan_SQL6DataSet.LOAIPHONGDataTable dataTable = new QuanLyKhachSan_SQL6DataSet.LOAIPHONGDataTable();
+            DataSet1.LOAIPHONGDataTable dataTable = new DataSet1.LOAIPHONGDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -11883,14 +11883,14 @@ SELECT MALP, TENLP, TRANGBI, DONGIA FROM LOAIPHONG WHERE (MALP = @MALP)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet.LOAIPHONGDataTable dataTable) {
+        public virtual int Update(DataSet1.LOAIPHONGDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet dataSet) {
+        public virtual int Update(DataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "LOAIPHONG");
         }
         
@@ -12317,7 +12317,7 @@ SELECT MANV, TENNV, DIACHI, SDT, MK, GIOITINH, MABP, NGAYSINH, LUONG, MA_NQL FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyKhachSan_SQL6DataSet.NHANVIENDataTable dataTable) {
+        public virtual int Fill(DataSet1.NHANVIENDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -12330,9 +12330,9 @@ SELECT MANV, TENNV, DIACHI, SDT, MK, GIOITINH, MABP, NGAYSINH, LUONG, MA_NQL FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyKhachSan_SQL6DataSet.NHANVIENDataTable GetData() {
+        public virtual DataSet1.NHANVIENDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QuanLyKhachSan_SQL6DataSet.NHANVIENDataTable dataTable = new QuanLyKhachSan_SQL6DataSet.NHANVIENDataTable();
+            DataSet1.NHANVIENDataTable dataTable = new DataSet1.NHANVIENDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -12340,14 +12340,14 @@ SELECT MANV, TENNV, DIACHI, SDT, MK, GIOITINH, MABP, NGAYSINH, LUONG, MA_NQL FRO
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet.NHANVIENDataTable dataTable) {
+        public virtual int Update(DataSet1.NHANVIENDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet dataSet) {
+        public virtual int Update(DataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "NHANVIEN");
         }
         
@@ -12946,7 +12946,7 @@ SELECT MAPDP, TIENTRATRUOC, MAKH, NGAYDAT, MANV FROM PHIEUDATPHONG WHERE (MAPDP 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyKhachSan_SQL6DataSet.PHIEUDATPHONGDataTable dataTable) {
+        public virtual int Fill(DataSet1.PHIEUDATPHONGDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -12959,9 +12959,9 @@ SELECT MAPDP, TIENTRATRUOC, MAKH, NGAYDAT, MANV FROM PHIEUDATPHONG WHERE (MAPDP 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyKhachSan_SQL6DataSet.PHIEUDATPHONGDataTable GetData() {
+        public virtual DataSet1.PHIEUDATPHONGDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QuanLyKhachSan_SQL6DataSet.PHIEUDATPHONGDataTable dataTable = new QuanLyKhachSan_SQL6DataSet.PHIEUDATPHONGDataTable();
+            DataSet1.PHIEUDATPHONGDataTable dataTable = new DataSet1.PHIEUDATPHONGDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -12969,14 +12969,14 @@ SELECT MAPDP, TIENTRATRUOC, MAKH, NGAYDAT, MANV FROM PHIEUDATPHONG WHERE (MAPDP 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet.PHIEUDATPHONGDataTable dataTable) {
+        public virtual int Update(DataSet1.PHIEUDATPHONGDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet dataSet) {
+        public virtual int Update(DataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "PHIEUDATPHONG");
         }
         
@@ -13390,7 +13390,7 @@ SELECT MAPSDDV, SOTIENTRATRUOC, MANV, NGAYSUDUNGDV FROM PHIEUSUDUNGDICHVU WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyKhachSan_SQL6DataSet.PHIEUSUDUNGDICHVUDataTable dataTable) {
+        public virtual int Fill(DataSet1.PHIEUSUDUNGDICHVUDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -13403,9 +13403,9 @@ SELECT MAPSDDV, SOTIENTRATRUOC, MANV, NGAYSUDUNGDV FROM PHIEUSUDUNGDICHVU WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyKhachSan_SQL6DataSet.PHIEUSUDUNGDICHVUDataTable GetData() {
+        public virtual DataSet1.PHIEUSUDUNGDICHVUDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QuanLyKhachSan_SQL6DataSet.PHIEUSUDUNGDICHVUDataTable dataTable = new QuanLyKhachSan_SQL6DataSet.PHIEUSUDUNGDICHVUDataTable();
+            DataSet1.PHIEUSUDUNGDICHVUDataTable dataTable = new DataSet1.PHIEUSUDUNGDICHVUDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -13413,14 +13413,14 @@ SELECT MAPSDDV, SOTIENTRATRUOC, MANV, NGAYSUDUNGDV FROM PHIEUSUDUNGDICHVU WHERE 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet.PHIEUSUDUNGDICHVUDataTable dataTable) {
+        public virtual int Update(DataSet1.PHIEUSUDUNGDICHVUDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet dataSet) {
+        public virtual int Update(DataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "PHIEUSUDUNGDICHVU");
         }
         
@@ -13812,7 +13812,7 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyKhachSan_SQL6DataSet.PHONGDataTable dataTable) {
+        public virtual int Fill(DataSet1.PHONGDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -13825,9 +13825,9 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyKhachSan_SQL6DataSet.PHONGDataTable GetData() {
+        public virtual DataSet1.PHONGDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            QuanLyKhachSan_SQL6DataSet.PHONGDataTable dataTable = new QuanLyKhachSan_SQL6DataSet.PHONGDataTable();
+            DataSet1.PHONGDataTable dataTable = new DataSet1.PHONGDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -13835,14 +13835,14 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet.PHONGDataTable dataTable) {
+        public virtual int Update(DataSet1.PHONGDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(QuanLyKhachSan_SQL6DataSet dataSet) {
+        public virtual int Update(DataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "PHONG");
         }
         
@@ -14225,7 +14225,7 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyKhachSan_SQL6DataSet.khachhangDP_ngayDataTable dataTable, global::System.Nullable<global::System.DateTime> date) {
+        public virtual int Fill(DataSet1.khachhangDP_ngayDataTable dataTable, global::System.Nullable<global::System.DateTime> date) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((date.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(date.Value));
@@ -14244,7 +14244,7 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyKhachSan_SQL6DataSet.khachhangDP_ngayDataTable GetData(global::System.Nullable<global::System.DateTime> date) {
+        public virtual DataSet1.khachhangDP_ngayDataTable GetData(global::System.Nullable<global::System.DateTime> date) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((date.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(date.Value));
@@ -14252,7 +14252,7 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            QuanLyKhachSan_SQL6DataSet.khachhangDP_ngayDataTable dataTable = new QuanLyKhachSan_SQL6DataSet.khachhangDP_ngayDataTable();
+            DataSet1.khachhangDP_ngayDataTable dataTable = new DataSet1.khachhangDP_ngayDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -14414,7 +14414,7 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(QuanLyKhachSan_SQL6DataSet.khachhangtt_ngayDataTable dataTable, global::System.Nullable<global::System.DateTime> date) {
+        public virtual int Fill(DataSet1.khachhangtt_ngayDataTable dataTable, global::System.Nullable<global::System.DateTime> date) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((date.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(date.Value));
@@ -14433,7 +14433,7 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual QuanLyKhachSan_SQL6DataSet.khachhangtt_ngayDataTable GetData(global::System.Nullable<global::System.DateTime> date) {
+        public virtual DataSet1.khachhangtt_ngayDataTable GetData(global::System.Nullable<global::System.DateTime> date) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((date.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((System.DateTime)(date.Value));
@@ -14441,7 +14441,7 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            QuanLyKhachSan_SQL6DataSet.khachhangtt_ngayDataTable dataTable = new QuanLyKhachSan_SQL6DataSet.khachhangtt_ngayDataTable();
+            DataSet1.khachhangtt_ngayDataTable dataTable = new DataSet1.khachhangtt_ngayDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -14474,7 +14474,7 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.IDbCommand[12];
+            this._commandCollection = new global::System.Data.IDbCommand[15];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp1.Properties.Settings.Default.QuanLyKhachSan_SQL6ConnectionString1);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).CommandText = "dbo.DatDV";
@@ -14528,42 +14528,59 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[4])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[5])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp1.Properties.Settings.Default.QuanLyKhachSan_SQL6ConnectionString1);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[5])).CommandText = "SELECT MAKH, hoten, CMND, QuocTich, LoaiDoiTuong FROM dbo.thongke_KH(@doituong)";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[5])).CommandText = "SELECT MAHD, TENKH, NGAYDEN, NGAYDI, TIENPHONG, TIENDICHVU, TIENGIAMGIA, TIENTRAT" +
+                "RUOC, TONGSOTIEN FROM dbo.HoaDon_KhachLe(@TenKH)";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[5])).CommandType = global::System.Data.CommandType.Text;
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[5])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@doituong", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[5])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TenKH", global::System.Data.SqlDbType.NVarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp1.Properties.Settings.Default.QuanLyKhachSan_SQL6ConnectionString1);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).CommandText = "SELECT MADT, LOAIDOITUONG, HEDOGIAMGIA, SOLUONG FROM dbo.thongke_khachhang(@loaid" +
-                "t)";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).CommandText = "SELECT MAKH, TENKH, NGAYDATPHONG FROM dbo.KhachHangTrongNgay(@NgayDatPhong)";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).CommandType = global::System.Data.CommandType.Text;
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@loaidt", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[6])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NgayDatPhong", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[7] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp1.Properties.Settings.Default.QuanLyKhachSan_SQL6ConnectionString1);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).CommandText = "SELECT MAPSDDV, tenDV, soluong, dongia, ngaysudung, thanhtien FROM dbo.tienDV(@ma" +
-                "pdp)";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).CommandText = "SELECT MAKH, hoten, CMND, QuocTich, LoaiDoiTuong FROM dbo.thongke_KH(@doituong)";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).CommandType = global::System.Data.CommandType.Text;
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mapdp", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[7])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@doituong", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[8] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp1.Properties.Settings.Default.QuanLyKhachSan_SQL6ConnectionString1);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).CommandText = "SELECT hoten, cmnd, ngayden, ngaydi, tienphong FROM dbo.tienphong_khachdoan(@cmnd" +
-                ")";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).CommandText = "SELECT MADT, LOAIDOITUONG, HEDOGIAMGIA, SOLUONG FROM dbo.thongke_khachhang(@loaid" +
+                "t)";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).CommandType = global::System.Data.CommandType.Text;
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cmnd", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[8])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@loaidt", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[9] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp1.Properties.Settings.Default.QuanLyKhachSan_SQL6ConnectionString1);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).CommandText = "SELECT hoten, ngayden, ngaydi, tienphong FROM dbo.tienphong_khachle(@maphong)";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).CommandText = "SELECT MAPSDDV, tenDV, soluong, dongia, ngaysudung, thanhtien FROM dbo.tienDV(@ma" +
+                "pdp)";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).CommandType = global::System.Data.CommandType.Text;
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@maphong", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[9])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mapdp", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[10] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp1.Properties.Settings.Default.QuanLyKhachSan_SQL6ConnectionString1);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).CommandText = "SELECT TienPhong, TienDV, GiamGia, TraTruoc FROM dbo.tt_khachdoan(@cmnd)";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).CommandText = "SELECT hoten, cmnd, ngayden, ngaydi, tienphong FROM dbo.tienphong_khachdoan(@cmnd" +
+                ")";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).CommandType = global::System.Data.CommandType.Text;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[10])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cmnd", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[11] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[11])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp1.Properties.Settings.Default.QuanLyKhachSan_SQL6ConnectionString1);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[11])).CommandText = "SELECT TienPhong, TienDV, GiamGia, TraTruoc FROM dbo.tt_khachle(@maphong)";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[11])).CommandText = "SELECT hoten, ngayden, ngaydi, tienphong FROM dbo.tienphong_khachle(@maphong)";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[11])).CommandType = global::System.Data.CommandType.Text;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[11])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@maphong", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[12] = new global::System.Data.SqlClient.SqlCommand();
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[12])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp1.Properties.Settings.Default.QuanLyKhachSan_SQL6ConnectionString1);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[12])).CommandText = "SELECT TienPhong, TienDV, GiamGia, TraTruoc FROM dbo.tt_khachdoan(@cmnd)";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[12])).CommandType = global::System.Data.CommandType.Text;
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[12])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cmnd", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[13] = new global::System.Data.SqlClient.SqlCommand();
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[13])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp1.Properties.Settings.Default.QuanLyKhachSan_SQL6ConnectionString1);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[13])).CommandText = "SELECT TienPhong, TienDV, GiamGia, TraTruoc FROM dbo.tt_khachle(@maphong)";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[13])).CommandType = global::System.Data.CommandType.Text;
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[13])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@maphong", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[14] = new global::System.Data.SqlClient.SqlCommand();
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[14])).Connection = new global::System.Data.SqlClient.SqlConnection(global::WindowsFormsApp1.Properties.Settings.Default.QuanLyKhachSan_SQL6ConnectionString1);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[14])).CommandText = "SELECT TRANGTHAI, LOAIPHONG, DONGIA, TRANGTHIETBI, MAPDP, TENKH, QUOCTICH, NGAYDA" +
+                "T, SDT, CMND FROM dbo.XemCTPhong(@MaPhong)";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[14])).CommandType = global::System.Data.CommandType.Text;
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[14])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MaPhong", global::System.Data.SqlDbType.VarChar, 1024, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -14835,8 +14852,64 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int thongke_KH(string doituong) {
+        public virtual int HoaDon_KhachLe(string TenKH) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[5]));
+            if ((TenKH == null)) {
+                throw new global::System.ArgumentNullException("TenKH");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(TenKH));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int KhachHangTrongNgay(string NgayDatPhong) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[6]));
+            if ((NgayDatPhong == null)) {
+                throw new global::System.ArgumentNullException("NgayDatPhong");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(NgayDatPhong));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int thongke_KH(string doituong) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[7]));
             if ((doituong == null)) {
                 throw new global::System.ArgumentNullException("doituong");
             }
@@ -14864,7 +14937,7 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int thongke_khachhang(string loaidt) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[6]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[8]));
             if ((loaidt == null)) {
                 throw new global::System.ArgumentNullException("loaidt");
             }
@@ -14892,7 +14965,7 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int tienDV(string mapdp) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[7]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[9]));
             if ((mapdp == null)) {
                 throw new global::System.ArgumentNullException("mapdp");
             }
@@ -14920,62 +14993,6 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int tienphong_khachdoan(string cmnd) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[8]));
-            if ((cmnd == null)) {
-                throw new global::System.ArgumentNullException("cmnd");
-            }
-            else {
-                command.Parameters[0].Value = ((string)(cmnd));
-            }
-            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                command.Connection.Open();
-            }
-            int returnValue;
-            try {
-                returnValue = command.ExecuteNonQuery();
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    command.Connection.Close();
-                }
-            }
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int tienphong_khachle(string maphong) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[9]));
-            if ((maphong == null)) {
-                throw new global::System.ArgumentNullException("maphong");
-            }
-            else {
-                command.Parameters[0].Value = ((string)(maphong));
-            }
-            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                command.Connection.Open();
-            }
-            int returnValue;
-            try {
-                returnValue = command.ExecuteNonQuery();
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    command.Connection.Close();
-                }
-            }
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int tt_khachdoan(string cmnd) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[10]));
             if ((cmnd == null)) {
                 throw new global::System.ArgumentNullException("cmnd");
@@ -15003,13 +15020,97 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int tt_khachle(string maphong) {
+        public virtual int tienphong_khachle(string maphong) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[11]));
             if ((maphong == null)) {
                 throw new global::System.ArgumentNullException("maphong");
             }
             else {
                 command.Parameters[0].Value = ((string)(maphong));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int tt_khachdoan(string cmnd) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[12]));
+            if ((cmnd == null)) {
+                throw new global::System.ArgumentNullException("cmnd");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(cmnd));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int tt_khachle(string maphong) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[13]));
+            if ((maphong == null)) {
+                throw new global::System.ArgumentNullException("maphong");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(maphong));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int XemCTPhong(string MaPhong) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[14]));
+            if ((MaPhong == null)) {
+                throw new global::System.ArgumentNullException("MaPhong");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(MaPhong));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -15373,7 +15474,7 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(QuanLyKhachSan_SQL6DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._bOPHANTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.BOPHAN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -15492,7 +15593,7 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(QuanLyKhachSan_SQL6DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._bOPHANTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.BOPHAN.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -15599,7 +15700,7 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(QuanLyKhachSan_SQL6DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._hOADONTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.HOADON.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -15730,7 +15831,7 @@ SELECT MAPHONG, TENPHONG, TRANGTHAI, MALP, MABP FROM PHONG WHERE (MAPHONG = @MAP
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(QuanLyKhachSan_SQL6DataSet dataSet) {
+        public virtual int UpdateAll(DataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

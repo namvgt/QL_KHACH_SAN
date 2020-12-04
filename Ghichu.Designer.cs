@@ -28,32 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label10 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.GhostWhite;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(0, 705);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(1425, 49);
-            this.label10.TabIndex = 115;
-            this.label10.Text = "CODE BY : NHÓM SQL 6";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Ghichu
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label10);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Ghichu";
-            this.Size = new System.Drawing.Size(1425, 754);
-            this.ResumeLayout(false);
+               this.label10 = new System.Windows.Forms.Label();
+               this.SuspendLayout();
+               // 
+               // label10
+               // 
+               this.label10.BackColor = System.Drawing.Color.GhostWhite;
+               this.label10.Dock = System.Windows.Forms.DockStyle.Bottom;
+               this.label10.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+               this.label10.ForeColor = System.Drawing.Color.Red;
+               this.label10.Location = new System.Drawing.Point(0, 458);
+               this.label10.Name = "label10";
+               this.label10.Size = new System.Drawing.Size(950, 32);
+               this.label10.TabIndex = 115;
+               this.label10.Text = "CODE BY : NHÓM 6";
+               this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+               // 
+               // Ghichu
+               // 
+               this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+               this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+               this.Controls.Add(this.label10);
+               this.Name = "Ghichu";
+               this.Size = new System.Drawing.Size(950, 490);
+               this.ResumeLayout(false);
 
         }
 
