@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
         }
         SqlConnection connect;
         SqlCommand comand;
-        string str = @"Data Source=NAM\SQLDEV2019;Initial Catalog=QuanLyKhachSan_SQL6;Integrated Security=True";
+        string str = System.Configuration.ConfigurationSettings.AppSettings["Main.ConnectionString"];
 
 
         private void Username_Click(object sender, EventArgs e)

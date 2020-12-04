@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
         string sql;
-        string chuoiketnoi = @"Data Source=NAM\SQLDEV2019;Initial Catalog=QuanLyKhachSan_SQL6;Integrated Security=True";
+        string chuoiketnoi = System.Configuration.ConfigurationSettings.AppSettings["Main.ConnectionString"];
         SqlConnection ketnoi;
         SqlCommand thuchien;
         SqlDataReader docdulieu;

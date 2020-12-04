@@ -95,6 +95,11 @@
     <Compile Include="DangNhap.designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="dataset2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -135,16 +140,6 @@
     </Compile>
     <Compile Include="QuanLyKhachSan_SQL6.Designer.cs">
       <DependentUpon>QuanLyKhachSan_SQL6.xsd</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="QuanLyKhachSan_SQL6DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>QuanLyKhachSan_SQL6DataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="QuanLyKhachSan_SQL6DataSet1.Designer.cs">
-      <DependentUpon>QuanLyKhachSan_SQL6DataSet1.xsd</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -194,6 +189,17 @@
     <EmbeddedResource Include="Trogiup.resx">
       <DependentUpon>Trogiup.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="dataset2.xsc">
       <DependentUpon>dataset2.xsd</DependentUpon>
     </None>
@@ -235,28 +241,6 @@
     </None>
     <None Include="QuanLyKhachSan_SQL6.xss">
       <DependentUpon>QuanLyKhachSan_SQL6.xsd</DependentUpon>
-    </None>
-    <None Include="QuanLyKhachSan_SQL6DataSet.xsc">
-      <DependentUpon>QuanLyKhachSan_SQL6DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QuanLyKhachSan_SQL6DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QuanLyKhachSan_SQL6DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QuanLyKhachSan_SQL6DataSet.xss">
-      <DependentUpon>QuanLyKhachSan_SQL6DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="QuanLyKhachSan_SQL6DataSet1.xsc">
-      <DependentUpon>QuanLyKhachSan_SQL6DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="QuanLyKhachSan_SQL6DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>QuanLyKhachSan_SQL6DataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="QuanLyKhachSan_SQL6DataSet1.xss">
-      <DependentUpon>QuanLyKhachSan_SQL6DataSet1.xsd</DependentUpon>
     </None>
     <None Include="Resources\login1.png" />
   </ItemGroup>

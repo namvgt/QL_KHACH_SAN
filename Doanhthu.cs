@@ -24,7 +24,7 @@ namespace WindowsFormsApp1
         
         private void load()
         {
-            using (SqlConnection connect = new SqlConnection(@"Data Source=NAM\SQLDEV2019;Initial Catalog=QuanLyKhachSan_SQL6;Integrated Security=True"))
+            using (SqlConnection connect = new SqlConnection(System.Configuration.ConfigurationSettings.AppSettings["Main.ConnectionString"]))
             {
                 connect.Open();
                 DateTime time;

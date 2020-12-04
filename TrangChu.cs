@@ -19,7 +19,7 @@ namespace WindowsFormsApp1
         private ArrayList phong;
         //private DataTable table;
         private int image = 1;
-        private string str = @"Data Source=NAM\SQLDEV2019;Initial Catalog=QuanLyKhachSan_SQL6;Integrated Security=True";
+        private string str = System.Configuration.ConfigurationSettings.AppSettings["Main.ConnectionString"];
         public TrangChu()
         {
 
@@ -329,7 +329,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button10_Click_1(object sender, EventArgs e)               // nút OK đặt phòng
+        private void button10_Click_1(object sender, EventArgs e)
         {
             if (textBox2.Text == "" ||
             textBox1.Text == "" ||
@@ -337,7 +337,7 @@ namespace WindowsFormsApp1
             textBox8.Text == "" ||
             comboBox3.Text == "" ||
             label117.Text == "" ||
-            cb_cmnd.Text == "")
+            textBox7.Text == "")
             {
                 MessageBox.Show("Thông tin chưa đầy đủ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -373,7 +373,7 @@ namespace WindowsFormsApp1
             using (connect = new SqlConnection(str))
             {
                 connect.Open();
-                command = new SqlCommand("select KH.* from KHACHHANG where MAKH = '" + label117.Text + "'", connect);
+                command = new SqlCommand("select MAKH from KHACHHANG where MAKH = '" + label117.Text + "'", connect);
                 SqlDataReader data = command.ExecuteReader(CommandBehavior.CloseConnection);
                 if (data.HasRows)
                 {
@@ -387,7 +387,7 @@ namespace WindowsFormsApp1
                     connect.Open();
                     command = new SqlCommand("exec themKH'" + label117.Text + "',N'" + textBox2.Text + "'" +
                     ",N'" + textBox1.Text + "',N'" + comboBox2.Text + "','" + textBox8.Text + "'" +
-                    ",'" + cb_cmnd.Text + "',N'" + comboBox3.Text + "','" + madt + "','0'", connect);
+                    ",'" + textBox7.Text + "',N'" + comboBox3.Text + "','" + madt + "','0'", connect);
                     command.ExecuteNonQuery();
                 }
             }
@@ -436,13 +436,15 @@ namespace WindowsFormsApp1
 
         private void TrangChu_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'quanLyKhachSan_SQL6DataSet.DICHVU' table. You can move, or remove it, as needed.
-            this.dICHVUTableAdapter1.Fill(this.quanLyKhachSan_SQL6DataSet.DICHVU);
-            // TODO: This line of code loads data into the 'dataset2.DICHVU' table. You can move, or remove it, as needed.
-            this.dICHVUTableAdapter.Fill(this.dataset2.DICHVU);
-            // TODO: This line of code loads data into the 'dataSet1.DICHVU' table. You can move, or remove it, as needed.
-            // TODO: This line of code loads data into the 'dataSet1.PHIEUDATPHONG' table. You can move, or remove it, as needed.
-            int n = 1;
+               // TODO: This line of code loads data into the 'dataSet1.DICHVU' table. You can move, or remove it, as needed.
+               this.dICHVUTableAdapter1.Fill(this.dataSet1.DICHVU);
+               // TODO: This line of code loads data into the 'dataSet1.DICHVU' table. You can move, or remove it, as needed.
+               this.dICHVUTableAdapter1.Fill(this.dataSet1.DICHVU);
+               // TODO: This line of code loads data into the 'dataset2.DICHVU' table. You can move, or remove it, as needed.
+               //this.dICHVUTableAdapter.Fill(this.dataset2.DICHVU);
+               // TODO: This line of code loads data into the 'dataSet1.DICHVU' table. You can move, or remove it, as needed.
+               // TODO: This line of code loads data into the 'dataSet1.PHIEUDATPHONG' table. You can move, or remove it, as needed.
+               int n = 1;
             panel3.Visible = true;
             using (connect = new SqlConnection(str))
             {
@@ -600,7 +602,7 @@ namespace WindowsFormsApp1
                 {
                     while (data.Read())
                     {
-                        if (cb_cmnd.Text + "      " == data[5].ToString())
+                        if (textBox7.Text + "      " == data[5].ToString())
                         {
                             textBox2.Text = data[1] as string;
                             textBox1.Text = data[2] as string;
@@ -641,7 +643,7 @@ namespace WindowsFormsApp1
             pn_ThanhToan.Visible = false;
         }
 
-        private void button10_Click_2(object sender, EventArgs e)                               //OK thanh toán
+        private void button10_Click_2(object sender, EventArgs e)
         {
             
             int so = 0;
@@ -656,7 +658,7 @@ namespace WindowsFormsApp1
                 connect.Open();
                 command = new SqlCommand("exec Tao_Hoadon " + so + 1 + ", null,'" + DateTimeOffset.Now.Date.ToString("yyyy-MM-dd") + "','" + textBox4.Text + "'," +
                     "'" + textBox10.Text + "','" + textBox13.Text + "','" + textBox12.Text + "','" + textBox20.Text + "','" + tb_MANV.Text + "' ", connect);
-                command.ExecuteNonQuery();                              // hoàn tất thanh toán
+                command.ExecuteNonQuery();
             }
             using (connect = new SqlConnection(str))
             {
@@ -684,11 +686,11 @@ namespace WindowsFormsApp1
 
         private void button40_Click_1(object sender, EventArgs e)
         {
-            foreach (Button it in phong)
+            foreach (Button item in phong)
             {
-                if (panel5.Location == new Point(it.Location.X + 30, it.Location.Y + 10))
+                if (panel5.Location == new Point(item.Location.X + 30, item.Location.Y + 10))
                 {
-                    if (it.BackColor == Color.Brown)
+                    if (item.BackColor == Color.Brown)
                     {
                         MessageBox.Show("Phòng này đã được thuê", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
@@ -698,41 +700,25 @@ namespace WindowsFormsApp1
             panel5.Visible = false;
             panel_datphong.Dock = DockStyle.Fill;
             panel_datphong.Visible = true;
-            
-            label122.Text = tb_MANV.Text;
-            dateTimePicker1.MinDate = DateTime.UtcNow;
-            dateTimePicker2.MinDate = DateTime.UtcNow;
-            int n = 0;
-            List<string> item = new List<string>();
-            AutoCompleteStringCollection ite = new AutoCompleteStringCollection();
-            using (connect = new SqlConnection(str))
-            {
-                connect.Open();
-                command = new SqlCommand("select count(*) from KHACHHANG", connect);
-                n = (int)command.ExecuteScalar();
-                n += 1;
-
-                command = new SqlCommand("select CMND from KHACHHANG", connect);
-                SqlDataReader data = command.ExecuteReader(CommandBehavior.CloseConnection);
-                if (data.HasRows)
-                {
-                    while (data.Read())
-                    {
-                        item.Add(data[0] as string);
-                        ite.Add(data[0] as string);
-                    }
-                }
-            }
-            cb_cmnd.DataSource = item;
-            cb_cmnd.AutoCompleteCustomSource = ite;
-            label117.Text = "KH" + n.ToString();
-            label124.Text = "NORMAL";
-            cb_cmnd.Text = "";
+            textBox7.Text = "";
             textBox2.Text = "";
             textBox1.Text = "";
             comboBox2.Text = "";
             textBox8.Text = "";
             comboBox3.Text = "";
+            label122.Text = tb_MANV.Text;
+            dateTimePicker1.MinDate = DateTime.UtcNow;
+            dateTimePicker2.MinDate = DateTime.UtcNow;
+            using (connect = new SqlConnection(str))
+            {
+                command = new SqlCommand("select count(*) from KHACHHANG", connect);
+                connect.Open();
+                var n = (int)command.ExecuteScalar();
+                n += 1;
+                label117.Text = "KH" + n.ToString();
+            }
+            label124.Text = "NORMAL";
+
         }
 
         private void button41_Click_2(object sender, EventArgs e)
@@ -763,7 +749,7 @@ namespace WindowsFormsApp1
             comboBox5.Text = "";
         }
 
-        private void button42_Click_1(object sender, EventArgs e)                       // nút trả phòng
+        private void button42_Click_1(object sender, EventArgs e)
         {
             foreach (Button item in phong)
             {
@@ -776,6 +762,9 @@ namespace WindowsFormsApp1
                     }
                 }
             }
+            panel5.Visible = false;
+            pn_ThanhToan.Visible = true;
+            pn_ThanhToan.Dock = DockStyle.Fill;
             string map = "";
             foreach (Button item in phong)
             {
@@ -786,31 +775,11 @@ namespace WindowsFormsApp1
                     break;
                 }
             }
-            using (connect = new SqlConnection(str))
-            {
-                connect.Open();
-                command = new SqlCommand("select * from phong_khachdoan()", connect);
-                SqlDataReader data = command.ExecuteReader(CommandBehavior.CloseConnection);
-                if (data.HasRows)
-                {
-                    while (data.Read())
-                    {
-                        if(map == data[2].ToString().Trim())
-                        {
-                            MessageBox.Show("Phòng này được thuê theo đoàn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            return;
-                        }
-                    }
-                }
-            }
-            panel5.Visible = false;
-            pn_ThanhToan.Visible = true;
-            pn_ThanhToan.Dock = DockStyle.Fill;
             textBox14.Text = DateTimeOffset.Now.Date.ToString("dd/MM/yyyy");
             using (connect = new SqlConnection(str))
             {
                 connect.Open();
-                command = new SqlCommand("select * from tt_khachle('" + map + "')", connect);           //  tính tiền phòng
+                command = new SqlCommand("select * from tt_khachle('" + map + "')", connect);
                 SqlDataReader data1 = command.ExecuteReader(CommandBehavior.CloseConnection);
                 if (data1.HasRows)
                 {
@@ -829,16 +798,18 @@ namespace WindowsFormsApp1
             {
 
                 connect.Open();
-                command = new SqlCommand("select * from XemTTKH_thanhtoan ('"+map+"')", connect);           //thông tin khách hàng của
-                SqlDataReader data = command.ExecuteReader(CommandBehavior.CloseConnection);                //hóa đơn
+                command = new SqlCommand("select KH.*, HESOGIAMGIA, NGAYTRA, TIENTRATRUOC, NGAYDAT, MANV, MAPSDDV " +
+                                           " from KHACHHANG KH, PHIEUDATPHONG PD, CT_PHIEUDATPHONG ct, DOITUONG dt " +
+                                           " where ct.MAPHONG = '" + map + "' and NGAYTRA is null and ct.MAPDP = PD.MAPDP " +
+                                           " and PD.MAKH = KH.MAKH  and KH.MADOITUONG = dt.MADOITUONG", connect);
+                SqlDataReader data = command.ExecuteReader(CommandBehavior.CloseConnection);
                 if (data.HasRows)
                 {
                     while (data.Read())
                     {
                         textBox20.Text = data[0] as string;
-                        tb_tenKH.Text = data[1] as string;
-                        textBox4.Text = ((double)data[3]).ToString();
-                        textBox16.Text = ((DateTime)data[2]).ToString("dd/MM/yyyy");
+                        textBox4.Text = ((double)data[11]).ToString();
+                        textBox16.Text = ((DateTime)data[12]).ToString("dd/MM/yyyy");
                         break;
                     }
                 }
@@ -852,14 +823,17 @@ namespace WindowsFormsApp1
             using (connect = new SqlConnection(str))
             {
                 connect.Open();
-                command = new SqlCommand("select * from Chitiet_DV('"+map+"')", connect);               // chi tiết dịch vụ
+                command = new SqlCommand("select TENDV, DONGIA, SOLUONG, SOTIENTRATRUOC, NGAYSUDUNGDV " +
+                                          "  from CT_PHIEUDATPHONG pdp, CT_PHIEUSUDUNGDICHVU ctdv, DICHVU dv, PHIEUSUDUNGDICHVU pdv " +
+                                         " where pdv.MAPSDDV = pdp.MAPSDDV and pdv.MAPSDDV = ctdv.MAPSDDV and ctdv.MADV = dv.MADV " +
+                                        " and pdp.MAPHONG = '" + textBox17.Text + "      " + "' and pdp.NGAYTRA is null ", connect);
                 SqlDataReader data = command.ExecuteReader(CommandBehavior.CloseConnection);
                 if (data.HasRows)
                 {
                     while (data.Read())
                     {
-                        table.Rows.Add(data[0] as string, ((DateTime)data[1]).ToString("dd/MM/yyyy")
-                            , (int)data[2], (double)data[3], ((double)data[3] * (int)data[2]));
+                        table.Rows.Add(data[0] as string, ((DateTime)data[4]).ToString("dd/MM/yyyy")
+                            , (int)data[2], (double)data[1], ((double)data[1] * (int)data[2]));
                     }
                 }
             }
@@ -892,7 +866,7 @@ namespace WindowsFormsApp1
             pn_DichVu.Visible = false;
         }
 
-        private void button15_Click_1(object sender, EventArgs e)                               //thêm dịch vụ
+        private void button15_Click_1(object sender, EventArgs e)
         {
             if (dataGridView2.Rows.Count == 0)
             {
@@ -904,8 +878,22 @@ namespace WindowsFormsApp1
             using (connect = new SqlConnection(str))
             {
                 connect.Open();
-                command = new SqlCommand("select dbo.MAPSDDV()", connect);                          // lây ra mã phiếu mới
-                mapd = command.ExecuteScalar().ToString().Trim();
+                command = new SqlCommand("select count(*) from PHIEUSUDUNGDICHVU", connect);
+                var n = (int)command.ExecuteScalar();
+                n += 1;
+                if (n < 10)
+                {
+                    mapd = "P00" + n.ToString();
+
+                }
+                else
+                {
+                    if (n < 100)
+                    {
+                        mapd = "P0" + n.ToString();
+                    }
+                    else mapd = "P" + n.ToString();
+                }
                 command = new SqlCommand("select top 1 MAPDP from CT_PHIEUDATPHONG where MAPHONG = '" + label127.Text + "' and NGAYTRA is null", connect);
                 SqlDataReader data = command.ExecuteReader(CommandBehavior.CloseConnection);
                 if (data.HasRows)
@@ -921,15 +909,15 @@ namespace WindowsFormsApp1
             using (connect = new SqlConnection(str))
             {
                 connect.Open();
-                command = new SqlCommand("exec themPSDDV '" + mapd + "','" + textBox3.Text + "','" + tb_MANV.Text + "','" + date + "'", connect);
+                command = new SqlCommand("insert PHIEUSUDUNGDICHVU values('" + mapd + "','" + textBox3.Text + "','" + tb_MANV.Text + "','" + date + "')", connect);
                 command.ExecuteNonQuery();
-                command = new SqlCommand("exec Them_CTPDP '" + mapdp + "', '" + label127.Text + "',null,'" + mapd + "'", connect);
+                command = new SqlCommand("insert CT_PHIEUDATPHONG values('" + mapdp + "', '" + label127.Text + "',null,'" + mapd + "')", connect);
                 command.ExecuteNonQuery();
                 for (int i = 0; i < dataGridView2.Rows.Count; i++)
                 {
                     if (dataGridView2.Rows[i].Cells[1].Value.ToString() != "0")
                     {
-                        command = new SqlCommand("exec Them_CTPSDDV '" + mapd + "','" + dataGridView2.Rows[i].Cells[1].Value.ToString() + "','" + dataGridView2.Rows[i].Cells[2].Value.ToString() + "'", connect);
+                        command = new SqlCommand("insert CT_PHIEUSUDUNGDICHVU values('" + mapd + "','" + dataGridView2.Rows[i].Cells[1].Value.ToString() + "','" + dataGridView2.Rows[i].Cells[2].Value.ToString() + "')", connect);
                         command.ExecuteNonQuery();
                     }
                 }
@@ -1187,6 +1175,7 @@ namespace WindowsFormsApp1
                 {
                     if (dataGridView2.Rows[i].Cells[0].Value.ToString() == dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString())
                     {
+
                         return;
                     }
                 }
@@ -1261,8 +1250,7 @@ namespace WindowsFormsApp1
             using (connect = new SqlConnection(str))
             {
                 connect.Open();
-                command = new SqlCommand("select p.MAPHONG, TRANGTHAI, TENLP " +
-                    "from PHONG p, LOAIPHONG lp where p.MALP = lp.MALP and TRANGTHAI = N'Chưa Thuê'", connect);
+                command = new SqlCommand("select * from PhongChuaThue()", connect);
                 SqlDataReader data = command.ExecuteReader(CommandBehavior.CloseConnection);
                 if (data.HasRows)
                 {
@@ -1395,17 +1383,17 @@ namespace WindowsFormsApp1
                 }
                 if (!k)
                 {
-                    command = new SqlCommand("insert KHACHHANG values('" + lbMAKH.Text + "',N'" + textBox15.Text + "',N'" + textBox27.Text + "', " +
-                    "N'" + textBox30.Text + "', '" + textBox31.Text + "', '" + cbCMND.Text + "', N'" + comboBox4.Text + "','DT04','0')", connect);
+                    command = new SqlCommand("EXEC ThemMoiKH '" + lbMAKH.Text + "',N'" + textBox15.Text + "',N'" + textBox27.Text + "', " +
+                    "N'" + textBox30.Text + "', '" + textBox31.Text + "', '" + cbCMND.Text + "', N'" + comboBox4.Text + "','DT04','0'", connect);
                     command.ExecuteNonQuery();
                 }
                 string date = DateTimeOffset.Now.Date.ToString("yyyy-MM-dd");
-                command = new SqlCommand("insert PHIEUDATPHONG values('" + mapd + "','" + textBox22.Text + "', " +
-                    "'" + lbMAKH.Text + "','" + date + "','" + tb_MANV.Text + "')", connect);
+                command = new SqlCommand("EXEC ThemPDP '" + mapd + "','" + textBox22.Text + "', " +
+                    "'" + lbMAKH.Text + "','" + date + "','" + tb_MANV.Text + "'", connect);
                 command.ExecuteNonQuery();
                 for (int i = 0; i < dataGridView5.Rows.Count; i++)
                 {
-                    command = new SqlCommand("insert CT_PHIEUDATPHONG values('" + mapd + "','" + dataGridView5.Rows[i].Cells[0].Value.ToString() + "',null,null)", connect);
+                    command = new SqlCommand("EXEC Them_CTPDP'" + mapd + "','" + dataGridView5.Rows[i].Cells[0].Value.ToString() + "',null,null", connect);
                     command.ExecuteNonQuery();
                     command = new SqlCommand("update PHONG set TRANGTHAI = N'Đã Thuê' where MAPHONG = '" + dataGridView5.Rows[i].Cells[0].Value.ToString() + "'", connect);
                     command.ExecuteNonQuery();
@@ -1492,7 +1480,7 @@ namespace WindowsFormsApp1
             using (connect = new SqlConnection(str))
             {
                 connect.Open();
-                command = new SqlCommand("select * from phong_khachdoan()", connect);
+                command = new SqlCommand("EXEC KHChuaTraPhong", connect);
                 SqlDataReader data = command.ExecuteReader(CommandBehavior.CloseConnection);
                 if (data.HasRows)
                 {
@@ -1501,13 +1489,13 @@ namespace WindowsFormsApp1
                     {
                         if (data[1] as string != cmnd)
                         {
-                            table.Rows.Add(data[3] as string, data[0] as string, data[1] as string, data[2].ToString().Trim(), data[4] as string,
+                            table.Rows.Add(data[3] as string, data[0] as string, data[1] as string, data[2] as string, data[4] as string,
                                 (double)data[5], (double)data[7], ((DateTime)data[6]).ToString("dd/MM/yyyy"));
                             cmnd = data[1] as string;
-                        } 
+                        }
                         else
                         {
-                            string s1 = ", " + data[2].ToString().Trim();
+                            string s1 = ", " + data[2] as string;
                             string s2 = table.Rows[table.Rows.Count - 1][3].ToString();
                             table.Rows[table.Rows.Count - 1][3] = s2 + s1;
                         }
@@ -1531,7 +1519,6 @@ namespace WindowsFormsApp1
                 pn_tt.Dock = DockStyle.None;
                 pn_ThanhToan.Dock = DockStyle.Fill;
                 pn_ThanhToan.Visible = true;
-                tb_tenKH.Text = dataGridView6.Rows[e.RowIndex].Cells[2].Value.ToString();
                 textBox20.Text = dataGridView6.Rows[e.RowIndex].Cells[1].Value.ToString();
                 textBox17.Text = dataGridView6.Rows[e.RowIndex].Cells[4].Value.ToString();
                 textBox14.Text = DateTimeOffset.Now.Date.ToString("dd/MM/yyyy");
@@ -1551,7 +1538,6 @@ namespace WindowsFormsApp1
                             textBox10.Text = data[2].ToString();
                             textBox4.Text = data[3].ToString();
                             textBox12.Text = ((double)data[0] + (double)data[1]).ToString();
-                            textBox9.Text = ((double)data[0] + (double)data[1] - (double)data[2] - (double)data[3]).ToString();
                         }
                     }
                 }
@@ -1564,10 +1550,7 @@ namespace WindowsFormsApp1
                 using (connect = new SqlConnection(str))
                 {
                     connect.Open();
-                    command = new SqlCommand("select TENDV, DONGIA, SOLUONG, SOTIENTRATRUOC, NGAYSUDUNGDV " +
-                                              "  from CT_PHIEUDATPHONG pdp, CT_PHIEUSUDUNGDICHVU ctdv, DICHVU dv, PHIEUSUDUNGDICHVU pdv " +
-                                             " where pdv.MAPSDDV = pdp.MAPSDDV and pdv.MAPSDDV = ctdv.MAPSDDV and ctdv.MADV = dv.MADV " +
-                                            " and pdp.MAPDP = '" + dataGridView6.Rows[e.RowIndex].Cells[5].Value.ToString().Trim() + "' ", connect);
+                    command = new SqlCommand("EXEC XemDVTheoPhong'" + dataGridView6.Rows[e.RowIndex].Cells[5].Value.ToString().Trim() + "' ", connect);
                     SqlDataReader data = command.ExecuteReader(CommandBehavior.CloseConnection);
                     if (data.HasRows)
                     {
@@ -1628,29 +1611,6 @@ namespace WindowsFormsApp1
         private void pn_thongtinphong_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void cb_cmnd_SelectedValueChanged(object sender, EventArgs e)
-        {
-            using (connect = new SqlConnection(str))
-            {
-                connect.Open();
-                command = new SqlCommand("select KH.*, LOAIDOITUONG from KHACHHANG KH, DOITUONG DT where CMND = '" + cb_cmnd.Text + "' and KH.MADOITUONG = DT.MADOITUONG ", connect);
-                SqlDataReader data = command.ExecuteReader(CommandBehavior.CloseConnection);
-                if (data.HasRows)
-                {
-                    while (data.Read())
-                    {
-                        textBox2.Text = data[1] as string;
-                        label117.Text = data[0] as string;
-                        textBox1.Text = data[2] as string;
-                        comboBox2.Text = data[3] as string;
-                        textBox8.Text = data[4] as string;
-                        comboBox3.Text = data[6] as string;
-                        label124.Text = data[9] as string;
-                    }
-                }
-            }
         }
     }
 }

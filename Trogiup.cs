@@ -19,37 +19,12 @@ namespace WindowsFormsApp1
 
         private void btnDangxuat_Click(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void btndoipass_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btndoipass_Leave(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btndoipass_MouseMove(object sender, MouseEventArgs e)
-        {
-            btndoipass.BackColor = Color.Red;
-        }
-
-        private void btnDangxuat_MouseMove(object sender, MouseEventArgs e)
-        {
-            btnDangxuat.BackColor = Color.Red;
-        }
-
-        private void btnDangxuat_MouseLeave(object sender, EventArgs e)
-        {
-            btnDangxuat.BackColor = Color.Blue;
-        }
-
-        private void btndoipass_MouseLeave(object sender, EventArgs e)
-        {
-            btndoipass.BackColor = Color.Blue;
         }
     }
 }
