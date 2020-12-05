@@ -18,15 +18,14 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
         string sql;
-        string chuoiketnoi = System.Configuration.ConfigurationSettings.AppSettings["Main.ConnectionString"];
+        string chuoiketnoi = "Data Source=SCORPION;Initial Catalog=QuanLyKhachSan_SQL6;Integrated Security=True";
         SqlConnection ketnoi;
-        SqlCommand thuchien;
+        SqlCommand command;
         SqlDataReader docdulieu;
         int i = 0;
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'quanlykhachsan_btl.PHONG' table. You can move, or remove it, as needed.
             Hienthi_dsChuathue();
             Hienthi_dsDathue();
         }
@@ -48,12 +47,11 @@ namespace WindowsFormsApp1
             ketnoi.Open();
             sql = "select p.MAPHONG,p.TENPHONG,lp.TENLP,lp.TRANGBI,lp.DONGIA,p.MABP,p.TRANGTHAI from PHONG p, LOAIPHONG lp "+
                   "where p.TRANGTHAI = N'Chưa thuê' and p.MALP = lp.MALP";
-            thuchien = new SqlCommand(sql, ketnoi);
-            docdulieu = thuchien.ExecuteReader();
+            command = new SqlCommand(sql, ketnoi);
+            docdulieu = command.ExecuteReader();
             i = 0;
             while(docdulieu.Read())
             {
-
                 lstv_dsChuathue.Items.Add(docdulieu[0].ToString());
                 lstv_dsChuathue.Items[i].SubItems.Add(docdulieu[1].ToString());
                 lstv_dsChuathue.Items[i].SubItems.Add(docdulieu[2].ToString());
@@ -61,7 +59,6 @@ namespace WindowsFormsApp1
                 lstv_dsChuathue.Items[i].SubItems.Add(docdulieu[4].ToString());
                 lstv_dsChuathue.Items[i].SubItems.Add(docdulieu[5].ToString());
                 lstv_dsChuathue.Items[i].SubItems.Add(docdulieu[6].ToString());
-                
                 i++;
             }
             ketnoi.Close();
@@ -74,8 +71,8 @@ namespace WindowsFormsApp1
             ketnoi.Open();
             sql = "select p.MAPHONG,p.TENPHONG,lp.TENLP,lp.TRANGBI,lp.DONGIA,p.MABP,p.TRANGTHAI from PHONG p, LOAIPHONG lp " +
                   "where p.TRANGTHAI = N'Đã thuê' and p.MALP = lp.MALP";
-            thuchien = new SqlCommand(sql, ketnoi);
-            docdulieu = thuchien.ExecuteReader();
+            command = new SqlCommand(sql, ketnoi);
+            docdulieu = command.ExecuteReader();
             i = 0;
             while (docdulieu.Read())
             {
@@ -129,9 +126,13 @@ namespace WindowsFormsApp1
             txtTrangthai_phong.Text = lstv_dsChuathue.SelectedItems[0].SubItems[6].Text;
         }
 
+        private void btn_datphong_Click(object sender, EventArgs e)
+        {
+            var datphong = new DatPhong();
+            datphong.Show();
 
-
-
+            panelQuanly_phong.Visible = false;            
+        }
 
     }
     // FORM của các panel : 904, 452

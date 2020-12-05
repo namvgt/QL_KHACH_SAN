@@ -80,12 +80,6 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bo_phan.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Bo_phan.Designer.cs">
-      <DependentUpon>Bo_phan.cs</DependentUpon>
-    </Compile>
     <Compile Include="CirclePictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -105,35 +99,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dataset2.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Dichvu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Dichvu.Designer.cs">
-      <DependentUpon>Dichvu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Doanhthu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Doanhthu.Designer.cs">
-      <DependentUpon>Doanhthu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="DatPhong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="DatPhong.Designer.cs">
+      <DependentUpon>DatPhong.cs</DependentUpon>
     </Compile>
     <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ghichu.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Ghichu.Designer.cs">
-      <DependentUpon>Ghichu.cs</DependentUpon>
     </Compile>
     <Compile Include="QuanLyKhachSan_SQL6.cs">
       <DependentUpon>QuanLyKhachSan_SQL6.xsd</DependentUpon>
@@ -151,32 +127,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Trogiup.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Trogiup.Designer.cs">
-      <DependentUpon>Trogiup.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Bo_phan.resx">
-      <DependentUpon>Bo_phan.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dichvu.resx">
-      <DependentUpon>Dichvu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Doanhthu.resx">
-      <DependentUpon>Doanhthu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="DatPhong.resx">
+      <DependentUpon>DatPhong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ghichu.resx">
-      <DependentUpon>Ghichu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
@@ -185,9 +143,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Trogiup.resx">
-      <DependentUpon>Trogiup.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
