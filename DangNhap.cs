@@ -37,8 +37,6 @@ namespace WindowsFormsApp1
         {
             if(Username.Text == "Admin")
             {
-                Form2 f = new Form2();
-                f.Visible = true;
                 return;
             }
             using (connect = new SqlConnection(str))

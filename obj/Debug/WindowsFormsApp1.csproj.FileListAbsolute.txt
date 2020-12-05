@@ -172,3 +172,27 @@ C:\Users\KNV\Desktop\TTCSDL_Nhóm6\Quản Lý Khách Sạn\obj\Debug\WindowsForm
 C:\Users\KNV\Desktop\TTCSDL_Nhóm6\Quản Lý Khách Sạn\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 C:\Users\KNV\Desktop\TTCSDL_Nhóm6\Quản Lý Khách Sạn\obj\Debug\WindowsFormsApp1.exe
 C:\Users\KNV\Desktop\TTCSDL_Nhóm6\Quản Lý Khách Sạn\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\admin\Desktop\QL_KHACH_SAN\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\admin\Desktop\QL_KHACH_SAN\bin\Debug\WindowsFormsApp1.exe
+C:\Users\admin\Desktop\QL_KHACH_SAN\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\admin\Desktop\QL_KHACH_SAN\bin\Debug\LiveCharts.dll
+C:\Users\admin\Desktop\QL_KHACH_SAN\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\admin\Desktop\QL_KHACH_SAN\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\admin\Desktop\QL_KHACH_SAN\bin\Debug\CustomControl.pdb
+C:\Users\admin\Desktop\QL_KHACH_SAN\bin\Debug\LiveCharts.pdb
+C:\Users\admin\Desktop\QL_KHACH_SAN\bin\Debug\LiveCharts.xml
+C:\Users\admin\Desktop\QL_KHACH_SAN\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\admin\Desktop\QL_KHACH_SAN\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\admin\Desktop\QL_KHACH_SAN\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\admin\Desktop\QL_KHACH_SAN\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\admin\Desktop\QL_KHACH_SAN\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\QL_KHACH_SAN\obj\Debug\WindowsFormsApp1.DangNhap.resources
+C:\Users\admin\Desktop\QL_KHACH_SAN\obj\Debug\WindowsFormsApp1.Form3.resources
+C:\Users\admin\Desktop\QL_KHACH_SAN\obj\Debug\WindowsFormsApp1.TrangChu.resources
+C:\Users\admin\Desktop\QL_KHACH_SAN\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\admin\Desktop\QL_KHACH_SAN\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\QL_KHACH_SAN\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\QL_KHACH_SAN\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\admin\Desktop\QL_KHACH_SAN\obj\Debug\WindowsFormsApp1.exe
+C:\Users\admin\Desktop\QL_KHACH_SAN\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\admin\Desktop\QL_KHACH_SAN\obj\Debug\WindowsFormsApp1.DatPhong.resources
